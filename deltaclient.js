@@ -48,7 +48,7 @@ class GUI {
             vShield: document.createElement("input"),
 			botspec: document.createElement("input"),
 			massbots: document.createElement("input"),
-            // startStop: document.createElement("input")
+             startStop: document.createElement("input")
         }, this.initialized = !1, this.rowsinit = !1, this.initialize()
     }
     initialize() {
@@ -399,7 +399,7 @@ class Transmitter {
 						gamePkt.feedButtonPressed = window.feedButtonPressed; //false / true
 						// if (window.startbot){
 							try{
-								// console.log('[X]:'+gamePkt.coords.mouse.x+ '[Y]:'+gamePkt.coords.mouse.y);
+								 console.log('[X]:'+gamePkt.coords.mouse.x+ '[Y]:'+gamePkt.coords.mouse.y);
 							}catch(e)
 							{
 								console.log(e);
