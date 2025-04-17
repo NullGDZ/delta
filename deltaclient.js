@@ -35,7 +35,7 @@ class GUI {
 				botspec: document.createElement("row"),
 				massbots: document.createElement("row"),
                 endtime: document.createElement("row"),
-                // startStop: document.createElement("row"),
+                startStop: document.createElement("row"),
 				botnum: document.createElement("row"),
             }
         }, this.inputs = {
@@ -48,7 +48,7 @@ class GUI {
             vShield: document.createElement("input"),
 			botspec: document.createElement("input"),
 			massbots: document.createElement("input"),
-            // startStop: document.createElement("input")
+            startStop: document.createElement("input")
         }, this.initialized = !1, this.rowsinit = !1, this.initialize()
     }
     initialize() {
@@ -283,7 +283,7 @@ class GUI {
 												alreadyrefresh2 = true;
 												document.getElementById('botnum').style.display = "block";
 												document.getElementById('timerBtn').style.display = "none";
-												// document.getElementById('botslaunch').innerHTML = '<button  style="margin-bottom:12px;padding:5px;"class="btn btn-warning" onclick="botlaunch();">Start Bots</button>';
+												document.getElementById('botslaunch').innerHTML = '<button  style="margin-bottom:12px;padding:5px;"class="btn btn-warning" onclick="botlaunch();">Start Bots</button>';
 											}
 										}
 								},1000);
@@ -839,4 +839,3 @@ setTimeout(()=>{
 	console.log('No conflic ext detected');
 	clearInterval(IntCheckext);
 },10000);
-
